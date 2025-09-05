@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Alain Mufula - Materials Scientist & Senior Lecturer</title>
-    <meta name="description" content="Professional website of Dr. Alain Mufula, Materials Scientist and Senior Lecturer specializing in nanocomposites for cancer therapeutics and sustainable energy">
+    <title>Dr. Alain I Mufula - Materials Scientist & Associate Professor</title>
+    <meta name="description" content="Professional website of Dr. Alain I Mufula, Materials Scientist and Associate Professor specializing in nanocomposites for cancer therapeutics and sustainable energy">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -18,11 +18,11 @@
             --background: #F9FAFB;
             --text: #111827;
             --white: #FFFFFF;
-            --spacing-sm: 0.5rem;
-            --spacing-md: 1rem;
-            --spacing-lg: 2rem;
-            --spacing-xl: 4rem;
-            --border-radius: 0.375rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 5rem;
+            --border-radius: 0.5rem;
         }
 
         * {
@@ -33,10 +33,11 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
+            line-height: 1.8;
             color: var(--text);
             background-color: var(--background);
             scroll-behavior: smooth;
+            font-size: 18px;
         }
 
         .container {
@@ -57,23 +58,25 @@
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
         }
 
         h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 600;
             text-align: center;
+            margin-bottom: var(--spacing-lg);
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 500;
         }
 
         p {
             margin-bottom: var(--spacing-md);
+            font-size: 1.1rem;
         }
 
         a {
@@ -88,7 +91,7 @@
 
         .btn {
             display: inline-block;
-            padding: 0.75rem 1.5rem;
+            padding: 1rem 2rem;
             background-color: var(--primary);
             color: var(--white);
             border-radius: var(--border-radius);
@@ -96,6 +99,7 @@
             border: none;
             cursor: pointer;
             font-weight: 500;
+            font-size: 1.1rem;
         }
 
         .btn:hover {
@@ -118,6 +122,7 @@
             animation: float 6s ease-in-out infinite;
             pointer-events: none;
             z-index: 0;
+            font-size: 2.5rem;
         }
 
         @keyframes float {
@@ -134,7 +139,7 @@
             background-color: var(--white);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
         }
 
         .nav-container {
@@ -144,7 +149,7 @@
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 700;
             color: var(--primary);
         }
@@ -152,17 +157,18 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
             font-weight: 500;
+            font-size: 1.1rem;
         }
 
         .hamburger {
             display: none;
             cursor: pointer;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         /* Hero Section */
@@ -180,22 +186,24 @@
         .hero-content {
             position: relative;
             z-index: 1;
+            padding: var(--spacing-xl) 0;
         }
 
         .hero-content h1 {
             color: var(--white);
-            margin-bottom: 1rem;
+            margin-bottom: var(--spacing-md);
+            font-size: 4rem;
         }
 
         .hero-content p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
+            font-size: 2rem;
+            margin-bottom: var(--spacing-lg);
             opacity: 0.9;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 1rem;
+            gap: var(--spacing-md);
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -205,16 +213,17 @@
             background-color: var(--white);
             padding: var(--spacing-xl);
             border-radius: var(--border-radius);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
             position: relative;
             z-index: 1;
+            margin-bottom: var(--spacing-lg);
         }
 
         /* Timeline */
         .timeline {
             position: relative;
-            padding-left: 2rem;
-            margin-left: 1rem;
+            padding-left: 3rem;
+            margin-left: 1.5rem;
         }
 
         .timeline::before {
@@ -223,23 +232,23 @@
             left: 0;
             top: 0;
             height: 100%;
-            width: 4px;
+            width: 6px;
             background-color: var(--secondary);
         }
 
         .timeline-item {
             position: relative;
-            margin-bottom: 2rem;
-            padding-left: 2rem;
+            margin-bottom: var(--spacing-lg);
+            padding-left: 3rem;
         }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -0.5rem;
+            left: -0.75rem;
             top: 0;
-            width: 1rem;
-            height: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
             border-radius: 50%;
             background-color: var(--secondary);
         }
@@ -247,35 +256,37 @@
         /* Publications */
         .publication-grid {
             display: grid;
-            gap: 1.5rem;
+            gap: var(--spacing-lg);
         }
 
         .publication-item {
-            padding: 1.5rem;
-            border-left: 4px solid var(--primary);
+            padding: var(--spacing-lg);
+            border-left: 6px solid var(--primary);
             background-color: var(--background);
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            font-size: 1.1rem;
         }
 
         /* Skills Grid */
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
         }
 
         .skill-category {
-            padding: 1.5rem;
+            padding: var(--spacing-lg);
             background-color: var(--background);
             border-radius: var(--border-radius);
         }
 
         .skill-category h4 {
             color: var(--primary);
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.5rem;
+            margin-bottom: var(--spacing-md);
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.75rem;
+            font-size: 1.5rem;
         }
 
         .skill-list {
@@ -283,9 +294,10 @@
         }
 
         .skill-list li {
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-left: 2rem;
             position: relative;
+            font-size: 1.1rem;
         }
 
         .skill-list li:before {
@@ -294,64 +306,71 @@
             font-weight: bold;
             position: absolute;
             left: 0;
+            font-size: 1.5rem;
         }
 
         /* Lectures */
         .lecture-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
         }
 
         .lecture-card {
             border-radius: var(--border-radius);
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
 
         .lecture-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
         }
 
         .lecture-card iframe {
             width: 100%;
-            height: 200px;
+            height: 250px;
             border: none;
         }
 
         .lecture-info {
-            padding: 1.5rem;
+            padding: var(--spacing-lg);
+        }
+
+        .lecture-info h3 {
+            font-size: 1.5rem;
         }
 
         /* Contact Form */
         .contact-form {
             display: grid;
-            gap: 1.5rem;
-            max-width: 600px;
+            gap: var(--spacing-lg);
+            max-width: 700px;
             margin: 0 auto;
         }
 
         .form-group {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 0.75rem;
         }
 
         .form-group label {
             font-weight: 500;
+            font-size: 1.2rem;
         }
 
         .form-group input,
         .form-group textarea {
-            padding: 0.75rem;
-            border: 1px solid #ddd;
+            padding: 1rem;
+            border: 2px solid #ddd;
             border-radius: var(--border-radius);
             font-family: inherit;
+            font-size: 1.1rem;
         }
 
         .form-group textarea {
-            min-height: 150px;
+            min-height: 200px;
             resize: vertical;
         }
 
@@ -366,36 +385,77 @@
         .footer-content {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: var(--spacing-lg);
         }
 
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1.5rem;
+            gap: var(--spacing-md);
         }
 
         .social-links a {
             color: var(--white);
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         /* Research Projects */
         .project-item {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
+            margin-bottom: var(--spacing-lg);
+            padding: var(--spacing-lg);
             border-radius: var(--border-radius);
             background-color: var(--background);
         }
 
         /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-content p {
+                font-size: 1.8rem;
+            }
+        }
+
         @media (max-width: 768px) {
+            :root {
+                --spacing-sm: 0.5rem;
+                --spacing-md: 1rem;
+                --spacing-lg: 1.5rem;
+                --spacing-xl: 3rem;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
             h1 {
                 font-size: 2.5rem;
             }
 
             h2 {
                 font-size: 2rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero-content p {
+                font-size: 1.5rem;
             }
 
             .nav-links {
@@ -406,8 +466,9 @@
                 left: 0;
                 width: 100%;
                 background-color: var(--white);
-                padding: 1rem;
+                padding: var(--spacing-md);
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                gap: 1rem;
             }
 
             .nav-links.active {
@@ -430,6 +491,15 @@
             .skills-grid {
                 grid-template-columns: 1fr;
             }
+
+            .timeline {
+                padding-left: 2rem;
+                margin-left: 1rem;
+            }
+
+            .timeline-item {
+                padding-left: 2rem;
+            }
         }
     </style>
 </head>
@@ -437,7 +507,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <div class="logo">Dr. Alain Mufula</div>
+            <div class="logo">Dr. AI Mufula</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -447,7 +517,6 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Expertise</a></li>
                 <li><a href="#lectures">Lectures</a></li>
-                <li><a href="#professional">Professional</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -469,11 +538,10 @@
         <div class="float-icon" style="left: 6%; bottom: 24%;">⚗️</div>
 
         <div class="container hero-content">
-            <h1>Dr. Alain Mufula</h1>
-            <p>Materials Scientist & Senior Lecturer | Nanocomposites for Cancer Therapeutics & Sustainable Energy</p>
+            <h1>Dr. Alain I Mufula</h1>
+            <p>Materials Scientist & Associate Professor | Nanocomposites for Cancer Therapeutics & Sustainable Energy</p>
             <div class="hero-buttons">
                 <a href="https://www.linkedin.com/in/dr-alain-mufula-phd-730480313" class="btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#" class="btn"><i class="fab fa-youtube"></i> YouTube</a>
                 <a href="#contact" class="btn"><i class="fas fa-envelope"></i> Contact Me</a>
             </div>
         </div>
@@ -484,8 +552,9 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="section-content">
+                <p>Dynamic academic leader with expertise in materials science, electrochemistry, and chemical engineering. Passionate about innovative teaching methods and student mentorship. Research focuses on anti-cancer drug delivery, nanocomposites, and sustainable energy solutions. Skilled in delivering measurable impact through teaching, research, and academic leadership.</p>
                 <p>I bring a dynamic blend of positivity, dedication, and responsibility to the academic environment. With extensive Lecturing experience, I am passionate about both the art of Lecturing and the journey of learning, sharing knowledge in engineering processes, electrochemistry, physical sciences, and mathematics. My approach extends beyond academics, as I actively address students' psychosocial needs, empowering them to grow and succeed holistically. Committed to excellence, I inspire my students and colleagues alike, fostering a collaborative environment where everyone strives to achieve their best.</p>
-                <p>Materials scientist and Senior Lecturer with 15+ years' experience developing nanocomposites for cancer therapeutics and sustainable energy. Published 3+ high-impact papers on macromolecular drug delivery (avg. citations: 45). Elevated student pass rates by 20% through innovative STEM pedagogy. Expert in SEM/TEM characterization and MATLAB simulation.</p>
+                <p>Materials scientist and Associate Professor with 15+ years' experience developing nanocomposites for cancer therapeutics and sustainable energy. Published 3+ high-impact papers on macromolecular drug delivery (avg. citations: 45). Elevated student pass rates by 20% through innovative STEM pedagogy. Expert in SEM/TEM characterization and MATLAB simulation.</p>
             </div>
         </div>
     </section>
@@ -520,8 +589,8 @@
             <div class="section-content">
 
                 <!-- Search Input -->
-                <div style="margin-bottom: 2rem; text-align:center;">
-                    <input type="text" id="searchInput" placeholder="Search publications..." style="padding:0.75rem 1rem; width:100%; max-width:400px; border-radius:var(--border-radius); border:1px solid #ddd; font-family: inherit; transition: border-color 0.3s ease;">
+                <div style="margin-bottom: var(--spacing-lg); text-align:center;">
+                    <input type="text" id="searchInput" placeholder="Search publications..." style="padding:1rem 1.25rem; width:100%; max-width:500px; border-radius:var(--border-radius); border:2px solid #ddd; font-family: inherit; transition: border-color 0.3s ease; font-size: 1.1rem;">
                 </div>
 
                 <div class="publication-grid">
@@ -601,6 +670,10 @@
                         <h3>1999: Hypochlorite concentration effects on clay organic matter destruction</h3>
                         <p><strong>Institution:</strong> Faculty of Engineering, University of Lubumbashi</p>
                     </div>
+                    <div class="timeline-item">
+                        <h3>1996: Investigation of setting power of granulated slag from water-jacket furnaces</h3>
+                        <p><strong>Institution:</strong> Faculty of Engineering, University of Lubumbashi</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -620,6 +693,27 @@
                         <p>Labs: Supervised 15+ graduate students in nanomaterials characterization (SEM/TEM/FTIR)</p>
                     </div>
                     <div class="timeline-item">
+                        <h3>Engineering Physics Support Coordinator</h3>
+                        <p><strong>University of The Witwatersrand, Faculty of Engineering</strong> (Present)</p>
+                        <p>Teach freshman-year students and monitor academic success metrics</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Lecturer: Physical Sciences & Mathematics for Medical Students</h3>
+                        <p><strong>University of The Witwatersrand, Office of Student Success</strong> (Present)</p>
+                        <p>Deliver core modules in Chemistry, Physics, and Mathematics to first-year medical students</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Chemical and Metallurgical Engineering Lecturer</h3>
+                        <p><strong>University of The Witwatersrand, Office of Student Success</strong></p>
+                        <p>Tutor and provide laboratory demonstrations for Process Engineering I and II</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Polymers Solvent and First Aid Manager</h3>
+                        <p><strong>University of The Witwatersrand, School of Chemistry</strong></p>
+                        <p>Manage oil quality and solvent handling in Polymers Laboratory</p>
+                        <p>Ensure materials meet quality standards and maintain safety protocols</p>
+                    </div>
+                    <div class="timeline-item">
                         <h3>Ph.D. in Materials Science</h3>
                         <p><strong>University of The Witwatersrand</strong> (2017)</p>
                         <p>Thesis: Production of ion exchange membrane for hydrogen fuel cell</p>
@@ -635,6 +729,7 @@
                     <div class="timeline-item">
                         <h3>B.Eng. in Chemical Engineering</h3>
                         <p><strong>University of Lubumbashi</strong> (1999)</p>
+                        <p><strong>Major courses:</strong> Chemical Engineering, Mineral Processing, Mathematics, Physics, Thermodynamics, Extractive Metallurgy, Electro-chemistry</p>
                     </div>
                 </div>
             </div>
@@ -680,6 +775,7 @@
                             <li>STEM Pedagogy</li>
                             <li>Curriculum Design</li>
                             <li>Academic Intervention</li>
+                            <li>Project Management</li>
                         </ul>
                     </div>
                 </div>
@@ -743,6 +839,9 @@
                         <h4>Professional Service</h4>
                         <ul class="skill-list">
                             <li>2023: Thesis Examiner - CO2/CH4 Separation Techniques (M.Sc.)</li>
+                            <li>2023: Thesis Examiner - Selection of technique to separate CO2 from methane for natural gas recovery at Lake Kivu</li>
+                            <li>2023: Thesis Examiner - Gas Recovery Modeling of South African Shale Gas Reservoir</li>
+                            <li>2022: Thesis Examiner - Isothermal batch reactor design for production of Bio-Fibers</li>
                             <li>2022: Curriculum Committee - Revised B.Eng. Chemical Engineering syllabus</li>
                             <li>2011-Present: Member - South African Institution of Chemical Engineers</li>
                         </ul>
@@ -750,9 +849,11 @@
                     <div class="skill-category">
                         <h4>Professional Memberships</h4>
                         <ul class="skill-list">
-                            <li>SAIChe (South African Institution of Chemical Engineers)</li>
-                            <li>SA Chemical Institute</li>
-                            <li>BioMatASA</li>
+                            <li>SAIChe (South African Institution of Chemical Engineers), Membership No: 007047 (2011–Present)</li>
+                            <li>SA Chemical Institute, Membership No: 16757 (2009–Present)</li>
+                            <li>BioMatASA, Membership No: 6C0152BC (2006–2015)</li>
+                            <li>Member of the Golden Key International Honour Society</li>
+                            <li>Member of the South African Institute of Physics</li>
                         </ul>
                     </div>
                     <div class="skill-category">
@@ -767,12 +868,31 @@
         </div>
     </section>
 
+    <!-- References Section -->
+    <section id="references">
+        <div class="container">
+            <h2>References</h2>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Professional References</h4>
+                        <ul class="skill-list">
+                            <li><strong>Prof. Bevan Smith</strong><br>University of the Witwatersrand, Johannesburg<br>Bevan.Smith@wits.ac.za<br>+27 72 588 4185</li>
+                            <li><strong>Prof. Lesias Morake Kotane</strong><br>University of the Witwatersrand, Johannesburg<br>School of Physics<br>Lesias.Kotane@wits.ac.za<br>+27 11 717 6834</li>
+                            <li><strong>Dr. Siziwe Gqoba</strong><br>University of the Witwatersrand, Johannesburg<br>Siziwe.Gqoba@wits.ac.za<br>+27 11 717 6756</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
             <div class="section-content">
-                <p style="text-align: center; margin-bottom: 2rem;">References available upon request</p>
+                <p style="text-align: center; margin-bottom: var(--spacing-lg);">References available upon request</p>
                 <form class="contact-form" action="https://formsubmit.co/alainmufula@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="New contact form submission from your website">
                     <input type="hidden" name="_template" value="table">
@@ -798,13 +918,15 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Dr. Alain Mufula. All rights reserved.</p>
+                <p>&copy; 2024 Dr. Alain I Mufula. All rights reserved.</p>
+                <p>Phone: +1 347 680-7298</p>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/dr-alain-mufula-phd-730480313" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                     <a href="mailto:alainmufula@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://alainmufula.github.io/website/" target="_blank"><i class="fas fa-globe"></i></a>
                 </div>
-                <p>Member: SAIChe, SA Chemical Institute, BioMatASA</p>
+                <p>Member: SAIChe, SA Chemical Institute, BioMatASA, Golden Key International Honour Society, South African Institute of Physics</p>
             </div>
         </div>
     </footer>
