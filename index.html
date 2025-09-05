@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Alain Mufula - Materials Scientist & Associate Professor</title>
-    <meta name="description" content="Professional website of Dr. Alain Mufula, Materials Scientist and Associate Professor specializing in nanocomposites for cancer therapeutics and sustainable energy">
+    <title>Dr. Alain Mufula - Materials Scientist & Senior Lecturer</title>
+    <meta name="description" content="Professional website of Dr. Alain Mufula, Materials Scientist and Senior Lecturer specializing in nanocomposites for cancer therapeutics and sustainable energy">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -380,6 +380,14 @@
             font-size: 1.5rem;
         }
 
+        /* Research Projects */
+        .project-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            background-color: var(--background);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             h1 {
@@ -435,9 +443,11 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Expertise</a></li>
                 <li><a href="#lectures">Lectures</a></li>
+                <li><a href="#professional">Professional</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -460,7 +470,7 @@
 
         <div class="container hero-content">
             <h1>Dr. Alain Mufula</h1>
-            <p>Materials Scientist & Associate Professor | Nanocomposites for Cancer Therapeutics & Sustainable Energy</p>
+            <p>Materials Scientist & Senior Lecturer | Nanocomposites for Cancer Therapeutics & Sustainable Energy</p>
             <div class="hero-buttons">
                 <a href="https://www.linkedin.com/in/dr-alain-mufula-phd-730480313" class="btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="#" class="btn"><i class="fab fa-youtube"></i> YouTube</a>
@@ -475,7 +485,7 @@
             <h2>About Me</h2>
             <div class="section-content">
                 <p>I bring a dynamic blend of positivity, dedication, and responsibility to the academic environment. With extensive Lecturing experience, I am passionate about both the art of Lecturing and the journey of learning, sharing knowledge in engineering processes, electrochemistry, physical sciences, and mathematics. My approach extends beyond academics, as I actively address students' psychosocial needs, empowering them to grow and succeed holistically. Committed to excellence, I inspire my students and colleagues alike, fostering a collaborative environment where everyone strives to achieve their best.</p>
-                <p>Materials scientist and Associate Professor with 15+ years' experience developing nanocomposites for cancer therapeutics and sustainable energy. Published 3+ high-impact papers on macromolecular drug delivery (avg. citations: 45). Elevated student pass rates by 20% through innovative STEM pedagogy. Expert in SEM/TEM characterization and MATLAB simulation.</p>
+                <p>Materials scientist and Senior Lecturer with 15+ years' experience developing nanocomposites for cancer therapeutics and sustainable energy. Published 3+ high-impact papers on macromolecular drug delivery (avg. citations: 45). Elevated student pass rates by 20% through innovative STEM pedagogy. Expert in SEM/TEM characterization and MATLAB simulation.</p>
             </div>
         </div>
     </section>
@@ -504,131 +514,97 @@
     </section>
 
     <!-- Publications Section -->
-<section id="publications">
-    <div class="container">
-        <h2>Publications</h2>
-        <div class="section-content">
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="section-content">
 
-            <!-- Search Input -->
-            <div style="margin-bottom: 2rem; text-align:center;">
-                <input type="text" id="searchInput" placeholder="Search publications..." style="padding:0.75rem 1rem; width:100%; max-width:400px; border-radius:var(--border-radius); border:1px solid #ddd; font-family: inherit; transition: border-color 0.3s ease;">
-            </div>
-
-            <div class="publication-grid">
-
-                <div class="publication-item" data-keywords="methotrexate ferrocene platinum cancer chemotherapy">
-                    <h3>Macromolecular Conjugates of Methotrexate, Ferrocene and Platinum in Cancer Chemotherapy</h3>
-                    <p><strong>Authors:</strong> Mufula & Neuse</p>
-                    <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 22, 134–148 (2012)</p>
-                    <p><strong>Citations:</strong> 68</p>
-                    <a href="https://link.springer.com/article/10.1007/s10904-011-9497-3" target="_blank" class="btn">View Paper</a>
+                <!-- Search Input -->
+                <div style="margin-bottom: 2rem; text-align:center;">
+                    <input type="text" id="searchInput" placeholder="Search publications..." style="padding:0.75rem 1rem; width:100%; max-width:400px; border-radius:var(--border-radius); border:1px solid #ddd; font-family: inherit; transition: border-color 0.3s ease;">
                 </div>
 
-                <div class="publication-item" data-keywords="methotrexate ferrocene chemotherapy co-conjugates">
-                    <h3>Macromolecular Co-Conjugates of Methotrexate and Ferrocene in the Chemotherapy of Cancer</h3>
-                    <p><strong>Authors:</strong> Mufula, Aderibigbe, Neuse & Mukaya</p>
-                    <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 22, 423–428 (2012)</p>
-                    <p><strong>Citations:</strong> 42</p>
-                    <a href="https://link.springer.com/article/10.1007/s10904-011-9595-2" target="_blank" class="btn">View Paper</a>
-                </div>
+                <div class="publication-grid">
 
-                <div class="publication-item" data-keywords="methotrexate ferrocene cancer chemotherapy carriers">
-                    <h3>Macromolecular Carriers for Methotrexate and Ferrocene in Cancer Chemotherapy</h3>
-                    <p><strong>Authors:</strong> Mufula & Neuse</p>
-                    <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 21, 511–526 (2011)</p>
-                    <p><strong>Citations:</strong> 52</p>
-                    <a href="https://link.springer.com/article/10.1007/s10904-011-9471-0" target="_blank" class="btn">View Paper</a>
-                </div>
+                    <div class="publication-item" data-keywords="methotrexate ferrocene platinum cancer chemotherapy">
+                        <h3>Macromolecular Conjugates of Methotrexate, Ferrocene and Platinum in Cancer Chemotherapy</h3>
+                        <p><strong>Authors:</strong> Mufula & Neuse</p>
+                        <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 22, 134–148 (2012)</p>
+                        <p><strong>Citations:</strong> 68</p>
+                        <a href="https://link.springer.com/article/10.1007/s10904-011-9497-3" target="_blank" class="btn">View Paper</a>
+                    </div>
 
-                <div class="publication-item" data-keywords="mufula dissertation methotrexate ferrocene prodrugs cancer">
-                    <h3>MSc Dissertation: Macromolecular Derivatives of Methotrexate and Ferrocene as Potential Prodrugs in Cancer Chemotherapy</h3>
-                    <p><strong>Author:</strong> Alain I. Mufula</p>
-                    <p><strong>Institution:</strong> University of the Witwatersrand, Johannesburg (2010)</p>
-                    <a href="https://wiredspace.wits.ac.za/items/7da27e75-f846-4284-9983-23b5440127db" target="_blank" class="btn">View Paper</a>
-                </div>
+                    <div class="publication-item" data-keywords="methotrexate ferrocene chemotherapy co-conjugates">
+                        <h3>Macromolecular Co-Conjugates of Methotrexate and Ferrocene in the Chemotherapy of Cancer</h3>
+                        <p><strong>Authors:</strong> Mufula, Aderibigbe, Neuse & Mukaya</p>
+                        <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 22, 423–428 (2012)</p>
+                        <p><strong>Citations:</strong> 42</p>
+                        <a href="https://link.springer.com/article/10.1007/s10904-011-9595-2" target="_blank" class="btn">View Paper</a>
+                    </div>
 
+                    <div class="publication-item" data-keywords="methotrexate ferrocene cancer chemotherapy carriers">
+                        <h3>Macromolecular Carriers for Methotrexate and Ferrocene in Cancer Chemotherapy</h3>
+                        <p><strong>Authors:</strong> Mufula & Neuse</p>
+                        <p><strong>Journal:</strong> J. Inorg. Organomet. Polym., 21, 511–526 (2011)</p>
+                        <p><strong>Citations:</strong> 52</p>
+                        <a href="https://link.springer.com/article/10.1007/s10904-011-9471-0" target="_blank" class="btn">View Paper</a>
+                    </div>
+
+                    <div class="publication-item" data-keywords="mufula dissertation methotrexate ferrocene prodrugs cancer">
+                        <h3>MSc Dissertation: Macromolecular Derivatives of Methotrexate and Ferrocene as Potential Prodrugs in Cancer Chemotherapy</h3>
+                        <p><strong>Author:</strong> Alain I. Mufula</p>
+                        <p><strong>Institution:</strong> University of the Witwatersrand, Johannesburg (2010)</p>
+                        <a href="https://wiredspace.wits.ac.za/items/7da27e75-f846-4284-9983-23b5440127db" target="_blank" class="btn">View Paper</a>
+                    </div>
+
+                    <div class="publication-item" data-keywords="styrene butadiene rubber hydrogenation response surface methodology">
+                        <h3>Effect of process variables on hydrogenation of styrene-butadiene rubber using response surface methodology approach</h3>
+                        <p><strong>Authors:</strong> Mufula, Iyuke, Wamwangi & Daramola</p>
+                        <p><strong>Journal:</strong> Polymer Engineering & Science (Submitted 2023)</p>
+                        <p><strong>Status:</strong> Submitted</p>
+                    </div>
+
+                    <div class="publication-item" data-keywords="styrene butadiene rubber hydrogenation fuel cells catalytic">
+                        <h3>Enhancement of oxidative properties of styrene-butadiene rubber for fuel cells application via hydrogenation using catalytic approach</h3>
+                        <p><strong>Authors:</strong> Mufula, Iyuke, Wamwangi & Daramola</p>
+                        <p><strong>Journal:</strong> ACS Applied Materials & Interfaces (Submitted 2023)</p>
+                        <p><strong>Status:</strong> Submitted</p>
+                    </div>
+
+                    <div class="publication-item" data-keywords="membrane electrode assembly hydrogenated sulfonated polystyrene butadiene rubber fuel cell electrolyser">
+                        <h3>Performance Evaluation of Membrane Electrode Assembly of Hydrogenated and Sulfonated Polystyrene-Butadiene Rubber in a Single Cell PEM Fuel Cell and Electrolyser</h3>
+                        <p><strong>Authors:</strong> Iyuke, Lukhele, Banda, Mufula & Iyuke</p>
+                        <p><strong>Journal:</strong> International Journal of Hydrogen Energy (Submitted 2023)</p>
+                        <p><strong>Status:</strong> Submitted</p>
+                    </div>
+
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    /* Modern Publications Cards */
-    .publication-grid {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        transition: all 0.3s ease;
-    }
-
-    .publication-item {
-        padding: 1.5rem;
-        border-radius: var(--border-radius);
-        background: var(--white);
-        border: 2px solid transparent;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.08);
-        transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-        opacity: 1;
-    }
-
-    .publication-item:hover {
-        transform: translateY(-5px);
-        border-image: linear-gradient(45deg, var(--primary), var(--secondary)) 1;
-        border-style: solid;
-        border-width: 2px;
-        box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-    }
-
-    .publication-item h3 {
-        font-size: 1.25rem;
-        margin-bottom: 0.5rem;
-        color: var(--primary);
-    }
-
-    .publication-item p {
-        margin-bottom: 0.5rem;
-        color: #333;
-    }
-
-    .publication-item .btn {
-        margin-top: 0.5rem;
-    }
-
-    /* Smooth filter transition */
-    .publication-item.hidden {
-        opacity: 0;
-        transform: scale(0.95);
-        pointer-events: none;
-        height: 0;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-    }
-
-    #searchInput:focus {
-        border-color: var(--primary);
-        outline: none;
-    }
-</style>
-
-<script>
-    // Publications Search/Filter with Smooth Transition
-    const searchInput = document.getElementById('searchInput');
-    const publications = document.querySelectorAll('.publication-item');
-
-    searchInput.addEventListener('keyup', function() {
-        const filter = searchInput.value.toLowerCase();
-        publications.forEach(pub => {
-            const keywords = pub.getAttribute('data-keywords').toLowerCase();
-            if (keywords.includes(filter)) {
-                pub.classList.remove('hidden');
-            } else {
-                pub.classList.add('hidden');
-            }
-        });
-    });
-</script>
-
+    <!-- Research Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Research Projects</h2>
+            <div class="section-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>2016: Production of ion-exchange membrane for hydrogen fuel cell</h3>
+                        <p><strong>Institution:</strong> School of Chemical and Metallurgical Engineering, Wits University</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2010: Macromolecular derivatives of methotrexate and ferrocene</h3>
+                        <p><strong>Institution:</strong> School of Chemistry, Polymer Department, Wits University</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>1999: Hypochlorite concentration effects on clay organic matter destruction</h3>
+                        <p><strong>Institution:</strong> Faculty of Engineering, University of Lubumbashi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Work Experience Section -->
     <section id="experience">
@@ -637,24 +613,24 @@
             <div class="section-content">
                 <div class="timeline">
                     <div class="timeline-item">
+                        <h3>Senior Lecturer</h3>
+                        <p><strong>University of The Witwatersrand, Johannesburg</strong> (2010–Present)</p>
+                        <p>Teaching: Led 8+ courses in Materials Science/Engineering (avg. student eval: 4.7/5)</p>
+                        <p>Student Success: Implemented tutoring program that reduced freshman attrition by 25%</p>
+                        <p>Labs: Supervised 15+ graduate students in nanomaterials characterization (SEM/TEM/FTIR)</p>
+                    </div>
+                    <div class="timeline-item">
                         <h3>Ph.D. in Materials Science</h3>
                         <p><strong>University of The Witwatersrand</strong> (2017)</p>
                         <p>Thesis: Production of ion exchange membrane for hydrogen fuel cell</p>
                     </div>
                     <div class="timeline-item">
-                        <h3>Associate Professor</h3>
-                        <p><strong>University of The Witwatersrand, Johannesburg</strong> (2010–Present)</p>
-                        <p>Lecturing: Led 8+ courses in Materials Science/Engineering (avg. student eval: 4.7/5)</p>
-                        <p>Student Success: Implemented tutoring program that reduced freshman attrition by 25%</p>
-                        <p>Labs: Supervised 15+ graduate students in nanomaterials characterization (SEM/TEM/FTIR)</p>
+                        <h3>Postgraduate Diploma in Higher Education</h3>
+                        <p><strong>University of The Witwatersrand</strong> (2021)</p>
                     </div>
                     <div class="timeline-item">
                         <h3>M.Sc. in Chemistry (Cum Laude)</h3>
                         <p><strong>University of The Witwatersrand</strong> (2010)</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>Postgraduate Diploma in Higher Education</h3>
-                        <p><strong>University of The Witwatersrand</strong> (2021)</p>
                     </div>
                     <div class="timeline-item">
                         <h3>B.Eng. in Chemical Engineering</h3>
@@ -699,7 +675,7 @@
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h4>Lecturing</h4>
+                        <h4>Teaching</h4>
                         <ul class="skill-list">
                             <li>STEM Pedagogy</li>
                             <li>Curriculum Design</li>
@@ -720,22 +696,22 @@
                     <div class="lecture-card">
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1pNs6FzrU8snmsfQekC-RU8fqtABPCKx0" loading="lazy" allowfullscreen></iframe>
                         <div class="lecture-info">
-                            <h3>Phys1032</h3>
-                            <p>Course materials and lectures for Phys1032</p>
+                            <h3>Physics for Engineers pt1</h3>
+                            <p>Course materials and lectures for Physics for Engineers pt1</p>
                         </div>
                     </div>
                     <div class="lecture-card">
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1_g3zLUg5tMKeMbJk1LRecaW5Pr4xrvyD" loading="lazy" allowfullscreen></iframe>
                         <div class="lecture-info">
-                            <h3>Phys 1033A1</h3>
-                            <p>Course materials and lectures for Phys 1033A1</p>
+                            <h3>Physics for Engineers pt2 (Part 1)</h3>
+                            <p>Course materials and lectures for Physics for Engineers pt2 (Part 1)</p>
                         </div>
                     </div>
                     <div class="lecture-card">
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1YBH_FxEs2p2jKgEtpSST3wellIrMiK9m" loading="lazy" allowfullscreen></iframe>
                         <div class="lecture-info">
-                            <h3>Phys1033A2</h3>
-                            <p>Course materials and lectures for Phys1033A2</p>
+                            <h3>Physics for Engineers pt2 (Part 2)</h3>
+                            <p>Course materials and lectures for Physics for Engineers pt2 (Part 2)</p>
                         </div>
                     </div>
                     <div class="lecture-card">
@@ -748,9 +724,43 @@
                     <div class="lecture-card">
                         <iframe src="https://drive.google.com/embeddedfolderview?id=1DbsBBhjHoHR9zjRdUzm-DnXH1ZJFewT0" loading="lazy" allowfullscreen></iframe>
                         <div class="lecture-info">
-                            <h3>Phys 1033 Problems and Solutions</h3>
-                            <p>Problem sets and solutions for Phys 1033</p>
+                            <h3>Physics Problems and Solutions</h3>
+                            <p>Problem sets and solutions for Physics</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Section -->
+    <section id="professional">
+        <div class="container">
+            <h2>Professional Activities</h2>
+            <div class="section-content">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Professional Service</h4>
+                        <ul class="skill-list">
+                            <li>2023: Thesis Examiner - CO2/CH4 Separation Techniques (M.Sc.)</li>
+                            <li>2022: Curriculum Committee - Revised B.Eng. Chemical Engineering syllabus</li>
+                            <li>2011-Present: Member - South African Institution of Chemical Engineers</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Professional Memberships</h4>
+                        <ul class="skill-list">
+                            <li>SAIChe (South African Institution of Chemical Engineers)</li>
+                            <li>SA Chemical Institute</li>
+                            <li>BioMatASA</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <ul class="skill-list">
+                            <li>Fluent English</li>
+                            <li>Fluent French</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -762,6 +772,7 @@
         <div class="container">
             <h2>Contact Me</h2>
             <div class="section-content">
+                <p style="text-align: center; margin-bottom: 2rem;">References available upon request</p>
                 <form class="contact-form" action="https://formsubmit.co/alainmufula@gmail.com" method="POST">
                     <input type="hidden" name="_subject" value="New contact form submission from your website">
                     <input type="hidden" name="_template" value="table">
@@ -821,6 +832,22 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+            });
+        });
+
+        // Publications Search/Filter with Smooth Transition
+        const searchInput = document.getElementById('searchInput');
+        const publications = document.querySelectorAll('.publication-item');
+
+        searchInput.addEventListener('keyup', function() {
+            const filter = searchInput.value.toLowerCase();
+            publications.forEach(pub => {
+                const keywords = pub.getAttribute('data-keywords').toLowerCase();
+                if (keywords.includes(filter)) {
+                    pub.classList.remove('hidden');
+                } else {
+                    pub.classList.add('hidden');
                 }
             });
         });
